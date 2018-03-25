@@ -42,7 +42,7 @@ function DrawActiveTheater( bDrawingDepth, bDrawingSkybox )
 		LastInfoDraw = CurTime()
 	end
 
-	if theater.Fullscreen then return end -- Don't render twice
+	--if theater.Fullscreen then return end -- Don't render twice
 
 	if !LastTheater then
 
