@@ -365,11 +365,6 @@ if SERVER then
 
 	function THEATER:RequestVideo( ply, url, force )
 
-		-- Prevent request spam
-		if IsValid(ply) and ply.LastVideoRequest and ply.LastVideoRequest + 0.3 > CurTime() then
-			return
-		end
-
 		if self:IsPrivate() then
 
 			-- Set new theater owner
